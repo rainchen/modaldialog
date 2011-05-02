@@ -1,0 +1,24 @@
+/*css for activo and modaldialog*/
+
+.modaldialog .ui-dialog{
+  background: none repeat scroll 0 0 #F4F4F4;
+}
+
+.modaldialog .ui-dialog-content{
+  border: none;
+}
+
+.ui-dialog-content #box{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.ui-dialog-content .block{
+  -moz-border-radius: 6px 6px 6px 6px;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #FFFFFF;
+  padding-top: 0;
+  text-shadow: 0 1px 0 #FFFFFF;
+  margin-bottom: 20px;
+  padding: 20px;
+}
