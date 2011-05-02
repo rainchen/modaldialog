@@ -30,7 +30,7 @@ bc. // with options
 
 p. Show a confirm dialog
   
-bc.
+bc. // handle ok, cancel
   $.fn.modaldialog.confirm(text, {
     ok: function(){
       alert('click on ok');
@@ -42,7 +42,7 @@ bc.
   
 p. Custom html
 
-bc.
+bc. // get html from other element
   $.fn.modaldialog.open('test', $("#bar").html());
   
 h2. Demo
