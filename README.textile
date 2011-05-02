@@ -30,6 +30,7 @@ bc. // with options
 
 p. Show a confirm dialog
   
+bc.
   $.fn.modaldialog.confirm(text, {
     ok: function(){
       alert('click on ok');
@@ -41,6 +42,7 @@ p. Show a confirm dialog
   
 p. Custom html
 
+bc.
   $.fn.modaldialog.open('test', $("#bar").html());
   
 h2. Demo
