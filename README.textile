@@ -4,7 +4,8 @@ h2. Usage
 
 p. Show a simple dialog
 
-  $("#dialog-box").modaldialog();
+  @$("#dialog-box").modaldialog();@
+
   
   // with options
   $("#dialog-box").modaldialog({
