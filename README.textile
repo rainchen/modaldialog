@@ -48,6 +48,24 @@ bc. // get html from other element
 h2. Demo
 
 p. +demo.html+ is a demo base on the https://github.com/dmfrancisco/activo project
+
+p. live demo: http://rainchen.github.com/modaldialog/
+
+p. Click on the "Login", "Logout", "Add" link(within table block) to show the dialogs
+
+h3. Screen shots
+
+h4. Logout Confirm dialog
+
+  !https://github.com/rainchen/modaldialog/raw/gh-pages/images/screenshots/activo_2.0/confirm_dialog.png!
+
+h4. Login dialog
+
+  !https://github.com/rainchen/modaldialog/raw/gh-pages/images/screenshots/activo_2.0/login_dialog.png!
+
+h4. Form dialog
+
+  !https://github.com/rainchen/modaldialog/raw/gh-pages/images/screenshots/activo_2.0/form_dialog.png!
   
 h2. Homepage
 
