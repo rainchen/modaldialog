@@ -6,8 +6,7 @@ p. Show a simple dialog
 
   @$("#dialog-box").modaldialog();@
 
-  
-  // with options
+bc. // with options
   $("#dialog-box").modaldialog({
     modal: true,
     disableScrolling: true,
