@@ -47,7 +47,7 @@ bc. // get html from other element
   
 h2. Demo
 
-p.	+demo.html+ is a demo base on the https://github.com/dmfrancisco/activo project
+p. +demo.html+ is a demo base on the https://github.com/dmfrancisco/activo project
   
 h2. Homepage
 
