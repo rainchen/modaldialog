@@ -28,6 +28,7 @@
     $(function(){
       initLoginDialog();
       initLogoutDialog();
+      initAddTableItem();
     });
 
     function initLoginDialog(){
@@ -56,6 +57,33 @@
             alert('do logout');
           }
         });
+      });
+    }
+
+    function initAddTableItem () {
+      $('a[href="#add-item"]').click(function(event) {
+         event.preventDefault();
+
+         $("#block-forms .content")
+          .clone()
+          .wrap('<div class="block">').parent()
+          .wrap('<div>').parent()
+           .modaldialog({
+              titleSelector: 'h2',
+              modal: false,
+              disableScrolling: false,
+              open: function(){
+                $(this).find(".control").remove();
+                // bind cancel button
+                var dialog = $(this);
+                $(this).find('img[alt="Cancel"]').parents(".button").click(function(event){
+                  event.preventDefault();
+                  dialog.dialog('close');
+                });
+
+              }
+            });
+
       });
     }
     
@@ -148,7 +176,7 @@
           </div>
           <div class="content">
             <div class="control">
-              <a class="button" href="#">
+              <a class="button" href="#add-item">
                  <img src="https://github.com/dmfrancisco/activo/raw/master/images/icons/add.png" alt="Add" /> Add
               </a>
               <a class="button" href="#">
