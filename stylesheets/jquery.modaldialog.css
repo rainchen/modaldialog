@@ -1,0 +1,104 @@
+.modaldialog .ui-dialog-container{
+
+     -moz-box-shadow: 0 0.7em 3em 0.4em #555555;
+  -webkit-box-shadow: 0 0.7em 3em 0.4em #555555;
+          box-shadow: 0 0.7em 3em 0.4em #555555;
+
+}
+
+.modaldialog .ui-dialog{
+  background: none repeat scroll 0 0 #C4C4C4;
+  color: #111111;  
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.theme-activo .modaldialog .ui-dialog{
+  background: url("themes/activo/images/bgd.png") repeat scroll 0 0 #C4C4C4;
+}
+
+.theme-classic .modaldialog .ui-dialog{
+  background: none repeat scroll 0 0 #F4F4F4;
+}
+
+.modaldialog .ui-dialog-content{
+  background: none;
+  
+/*  background: none repeat scroll 0 0 #D3D3D3;*/
+  background-color: rgba(255, 255, 255, 0.4);
+  
+  border-bottom: none;
+  
+  margin: 10px;
+}
+
+.modaldialog .ui-dialog .action-area {
+/*    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #969696, 0 1px 2px rgba(0, 0, 0, 0.25);*/
+/*    background-color: rgba(255, 255, 255, 0.4);*/
+    height: 24px;
+    left: 0;
+    padding: 5px 5px 10px 15px;
+    right: 0;
+    top: 0;
+}
+
+.modaldialog .ui-dialog .action-area button{
+  border: none;
+  background: none;
+  
+
+  display: inline-block;
+  float: right;
+
+  z-index: 4;
+  margin-left: 6px;
+  margin-right: 6px;
+  
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #828282, 0 1px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #828282, 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #828282, 0 1px 2px rgba(0, 0, 0, 0.25);
+  background-color: #D3D3D3;
+  color: #333333;
+  font: 11px/20px 'Lucida Grande',sans-serif;
+  padding: 4px 10px 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: white 0 1px 0;
+}
+
+.modaldialog .ui-dialog .ui-dialog-titlebar{
+  border: medium none;
+  background: none repeat scroll 0 0 transparent;
+  margin: 6px;
+}
+.modaldialog .ui-dialog .ui-dialog-titlebar .ui-dialog-title{
+  display: block;
+  float: left;
+  margin-left: 10px;
+  padding: 4px;
+  text-shadow: white 0 1px 0;
+}
+.modaldialog .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close{
+  display: block;
+  float: right;
+  border: 1px solid #e6e6e6; 
+}
+
+/*for confirm dialog*/
+.modaldialog .ui-dialog.confirm{
+
+}
+  .modaldialog .ui-dialog.confirm .ui-dialog-titlebar .ui-dialog-titlebar-close{
+    display: none;
+  }
+
+  .modaldialog .ui-dialog.confirm .ui-dialog-content .message {
+    height: 30px;
+    text-align:center;
+    padding:20px;
+    font-size: 14px;
+  }
