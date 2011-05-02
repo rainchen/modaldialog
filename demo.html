@@ -27,11 +27,11 @@
   <script type="text/javascript" charset="utf-8">
     $(function(){
       initLoginDialog();
+      initLogoutDialog();
     });
 
     function initLoginDialog(){
       $('a[href="#block-login"]')
-        .unbind('click') // prevent scrolling
         .click(function(event){
           event.preventDefault();
 
@@ -45,6 +45,20 @@
         .effect('highlight', {}, 3000)
         .click();
     }
+
+    function initLogoutDialog(){
+      $('a[href="#logout-link"]').click(function(event){
+        event.preventDefault();
+
+        var text = "Are you sure to logout?";
+        $.fn.modaldialog.confirm(text, {
+          ok: function(){
+            alert('do logout');
+          }
+        });
+      });
+    }
+    
   </script>
 
 </head>
@@ -61,7 +75,7 @@
           <li><a href="#"><img src="https://github.com/dmfrancisco/activo/raw/master/images/session/home.png"    title="Dashboard"   alt="Dashboard" /></a></li>
           <li><a href="#"><img src="https://github.com/dmfrancisco/activo/raw/master/images/session/account.png" title="Profile"     alt="Profile" /></a></li>
           <li><a href="#"><img src="https://github.com/dmfrancisco/activo/raw/master/images/session/config.png"  title="Preferences" alt="Preferences" /></a></li>
-          <li><a href="#"><img src="https://github.com/dmfrancisco/activo/raw/master/images/session/logout.png"  title="Logout"      alt="Logout" /></a></li>
+          <li><a href="#logout-link"><img src="https://github.com/dmfrancisco/activo/raw/master/images/session/logout.png"  title="Logout"      alt="Logout" /></a></li>
         </ul>
       </div>
       <div id="main-navigation">
