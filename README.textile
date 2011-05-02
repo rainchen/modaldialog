@@ -1,0 +1,54 @@
+h1. jQuery plugin, Slide down a mac style modal dialog, base on jQuery UI Dialog
+
+h2. Usage
+
+p. Show a simple dialog
+
+  $("#dialog-box").modaldialog();
+  
+  // with options
+  $("#dialog-box").modaldialog({
+    modal: true,
+    disableScrolling: true,
+    overlayOpacity: 0,
+    // callbacks
+    beforeopen: function(){
+      // return false to prevent open
+      console.info('before open');
+    },
+    open: function(){
+      console.info('after close');
+    },
+    beforeclose: function(){
+      // return false to prevent close
+      console.info('before close');
+    },
+    close: function(){
+      console.info('after close');
+    }
+  });
+
+p. Show a confirm dialog
+  
+  $.fn.modaldialog.confirm(text, {
+    ok: function(){
+      alert('click on ok');
+    },
+    cancel: function(){
+      alert('click on cancel');
+    }
+  });
+  
+p. Custom html
+
+  $.fn.modaldialog.open('test', $("#bar").html());
+  
+h2. Demo
+
+p.	+demo.html+ is a demo base on the https://github.com/dmfrancisco/activo project
+  
+h2. Homepage
+
+p. https:github.com/rainchen/modaldialog
+
+p. Copyright (c) 2011 [RainChen], released under the MIT license
