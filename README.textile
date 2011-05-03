@@ -67,6 +67,8 @@ h4. Form dialog
 
   !https://github.com/rainchen/modaldialog/raw/gh-pages/images/screenshots/activo_2.0/form_dialog.png!
   
+p. Screen shots are base on activo 2.0 (http://activo.dmfranc.com/preview/)
+
 h2. Homepage
 
 p. https:github.com/rainchen/modaldialog
