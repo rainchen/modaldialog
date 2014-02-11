@@ -1,1 +1,4 @@
 h1. Live demo page for modaldialog project(https://github.com/rainchen/modaldialog)
+
+index.html is based on https://github.com/dmfrancisco/activo/blob/master/activo.html
+activo2.html is based on https://github.com/dmfrancisco/activo/blob/activo-2/activo.html
